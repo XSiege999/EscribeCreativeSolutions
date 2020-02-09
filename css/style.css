@@ -1,0 +1,215 @@
+ 
+
+/*Global CSS*/
+
+ body{
+ 	font-family: Arial;
+ 	/*font-size: 1em;*/ 	
+ 	background-color: black;
+ 	color: #fcfcfc;
+ 	line-height: 2;
+ 	margin: 0;
+ 	text-align: center;
+
+ }
+
+ header{
+ 	padding: 0 0 0 0;
+
+ }
+
+ img{
+ 	display: block;
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ h1, h2, h3{
+ 	margin: 0;
+ 	padding: 1em 0;
+ }
+
+p{
+	margin: 0;
+	padding: 1em, 0;
+}
+
+/*Header Styling*/
+
+#showcase{
+	min-height: 500px;
+	color: white;
+	text-align: center;
+}
+
+#showcase .backgroundimg{
+	position: absolute;	
+	background: black url("images/img1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	z-index: -1;
+	opacity: 0.55;
+}
+
+
+#showcase h1{
+	line-height: 60px;
+	padding: 125px 0 30px 0;
+	font-size: 3.25em;
+
+}
+
+#showcase h2{
+	padding-top: .3em;
+}
+
+#showcase .content-wrap, 
+#a .content-wrap{
+	padding: 0 0em;
+}
+ 
+.branding ul{
+	list-style: none;
+}
+
+.branding ul li{
+	display: inline;
+	
+}
+
+/*Section A*/
+#a{
+	background-color: black;
+	padding-bottom: 2em;
+	padding-left: 0;
+}
+#a h2{
+	padding-bottom: 1em;
+}
+
+#a ul li{
+	list-style-position: inside;
+	/*text-align: justify;*/
+}
+
+/*Section B*/
+#b{
+	padding: 2em 1em 1em ;
+}
+
+#b ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#b ul li{
+	margin-bottom: 1em;
+	background: white;
+	color: black;
+}
+
+#b .card-content{
+	padding: 1.5em;
+}
+
+/*Section C*/
+
+#c .box{
+	padding: 2em;
+	color: white;
+}
+
+/*#c .box:first-child{
+	background: rgb(151, 154, 160);
+}
+
+#c .box:last-child{
+	background:rgb(114, 115, 117);
+}
+*/
+
+/*Buttons for Font Awesome links*/
+.btn{
+	padding: 30px 5px 2px 5px;
+	margin-top: 10px;
+}
+
+.btn:hover{
+	opacity: 0.55
+}
+
+
+/*Footer*/
+footer{
+	background: black;
+	color: white;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	line-height: 1.5em;
+	font-size: .75em;
+}
+
+/*Media Queries*/
+/*CSS Code for Desktop version of website*/
+
+@media(min-width: 700px) {
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+	}
+
+	.content-wrap, #b ul{
+		grid-column: 2/6;
+	}
+
+	.box{
+		grid-column: span 3; 
+	}
+
+	#b ul{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#b li{
+		width: 31%;
+	}
+
+
+	/*Header fonts*/
+	header h1{
+		font-size: 500px;
+
+	}
+	.branding{
+		font-size: 1.5em;
+	}
+
+	/*Main fonts*/
+	#a h2{
+		font-size: 2.4em;
+	}
+
+	#a p{
+		font-size: 1.9em;
+	}
+
+	#a ul{
+		font-size: 1.4em;
+	}
+
+
+	/*Footer alignment*/
+	footer{
+		text-align: right;
+		padding-right: 10px;
+	}
+
+
+
+}
+
